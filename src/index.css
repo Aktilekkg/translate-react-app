@@ -117,6 +117,7 @@ button:hover {
   }
 
   textarea {
+    margin: 0px;
     font-size: 13px;
   }
 
@@ -145,6 +146,7 @@ button:hover {
   }
 
   textarea {
+    margin: 10px;
     font-size: 13px;
   }
 
