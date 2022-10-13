@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +11,187 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  background: url(./img/one.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+
+  z-index: -1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+div {
+  padding: 10px;
+}
+
+textarea {
+  font-size: 25px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.524);
+  color: white;
+}
+
+option {
+  font-size: 16px;
+}
+
+select {
+  padding: 5px;
+  border: 5px;
+  background-color: rgb(228, 205, 252);
+
+}
+
+button {
+  padding: 0px 218px;
+  height: 30px;
+  border-radius: 0 0 10px 10px;
+  border: solid white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+}
+
+@media (max-width:1025px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  textarea {
+    margin-left: 0px;
+    font-size: 13px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 0px 100px;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+    border: solid white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+  }
+
+}
+@media (max-width:850px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 300px;
+  }
+
+  textarea {
+    margin-left: 0px;
+    font-size: 13px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 0px 100px;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+    border: solid white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+  }
+
+}
+@media (max-width:560px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+  }
+
+  textarea {
+    margin-left: -20px;
+    font-size: 13px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+  button {
+    padding: 0px 100px;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+    border: solid white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+  }
+
+}
+
+@media (max-width:380px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  textarea {
+    font-size: 18px;
+    width: 300px;
+  }
+
+  select {
+    font-size: 16px;
+    width: 70px;
+  }
+
+  button {
+    padding: 0px 100px;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+    border: solid white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.3s;
+  }
 }
