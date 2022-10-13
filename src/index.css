@@ -88,7 +88,7 @@ button:hover {
   }
 
   textarea {
-    margin-left: 0px;
+    margin: 0px;
     font-size: 13px;
   }
 
@@ -117,7 +117,7 @@ button:hover {
   }
 
   textarea {
-    margin-left: 0px;
+    margin: 0px;
     font-size: 13px;
   }
 
@@ -146,7 +146,7 @@ button:hover {
   }
 
   textarea {
-    margin-left: -20px;
+    margin: 0px;
     font-size: 13px;
   }
 
